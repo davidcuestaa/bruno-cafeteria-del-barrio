@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bruno - Tu cafetería de barrio en Orriols, Valencia. Café de calidad, desayunos caseros y el mejor ambiente cerca de ti. Ven a conocernos en Carrer de Santiago Rusiñol, 36.">
+    <meta name="keywords" content="cafetería Valencia, café Orriols, cafetería barrio, desayunos Valencia, café cerca de mí, cafetería Rascanya">
+    <title>Bruno - La cafetería del barrio | Orriols, Valencia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+              .text-brand {
+            color: #0F3D2E;
+        }
+        .text-brand-soft {
+            color: #1E5B45;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, h4 { font-family: 'Lora', serif; }
+        html { scroll-behavior: smooth; }
+        .hero-bg { 
+            background: linear-gradient(
+                135deg,
+                rgba(15, 61, 46, 0.95),
+                rgba(30, 91, 69, 0.9)
+            );
+            background-size: cover;
+            background-position: center;
+        }
+        .fade-in { animation: fadeIn 0.8s ease-in; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        .hover-lift { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .hover-lift:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.15); }
+        .nav-shadow { box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .coffee-bean { 
+            display: inline-block; 
+            width: 8px; 
+            height: 8px; 
+            background: #8b5a2b; 
+            border-radius: 50%; 
+            margin: 0 3px; 
+        }
+    </style>
+</head>
+<body class="bg-[#F5F2ED] text-brand">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/95 backdrop-blur-sm z-50 nav-shadow">
+        <div class="max-w-6xl mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold text-stone-800">
+                    <span class="text-[#0F3D2E]">Bruno</span>
+                </div>
+                <div class="hidden md:flex space-x-8 text-sm font-medium">
+                    <a href="#inicio" class="text-stone-700 hover:text-[#C9A24D] transition">Inicio</a>
+                    <a href="#nosotros" class="text-stone-700 hover:text-[#C9A24D] transition">Sobre Nosotros</a>
+                    <a href="#carta" class="text-stone-700 hover:text-[#C9A24D] transition">Nuestra Carta</a>
+                    <a href="#galeria" class="text-stone-700 hover:text-[#C9A24D] transition">Galería</a>
+                    <a href="#contacto" class="text-stone-700 hover:text-[#C9A24D] transition">Contacto</a>
+                </div>
+                <a href="tel:+34633552298" class="bg-[#0F3D2E] text-white px-5 py-2 rounded-full hover:bg-[#C9A24D] transition text-sm font-medium">
+                    Llamar ahora
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-bg min-h-screen flex items-center pt-20">
+        <div class="max-w-6xl mx-auto px-4 py-20">
+            <div class="text-center text-white fade-in">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6">Bruno</h1>
+                <p class="text-2xl md:text-3xl mb-4 font-light">La cafetería del barrio</p>
+                <div class="flex justify-center mb-8">
+                    <span class="coffee-bean"></span>
+                    <span class="coffee-bean"></span>
+                    <span class="coffee-bean"></span>
+                </div>
+                <p class="text-xl md:text-2xl mb-12 max-w-2xl mx-auto leading-relaxed">
+                    Tu café de siempre, como debe ser
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#carta" class="bg-white text-[#0F3D2E] px-8 py-4 rounded-full font-semibold hover:bg-stone-100 transition inline-flex items-center justify-center">
+                        Ver nuestra carta
+                    </a>
+                    <a href="#contacto" class="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-[#0F3D2E] transition inline-flex items-center justify-center">
+                        Cómo llegar
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Nosotros -->
+    <section id="nosotros" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="fade-in">
+                    <h2 class="text-4xl font-bold mb-6 text-stone-800">Más que una cafetería</h2>
+                    <p class="text-lg text-stone-600 mb-6 leading-relaxed">
+                        En pleno corazón de Orriols, Bruno nació con una idea simple: crear un espacio donde los vecinos del barrio se sientan como en casa. Un lugar donde el café sea de verdad, los desayunos se preparen con mimo y cada visita sea un momento para disfrutar.
+                    </p>
+                    <p class="text-lg text-stone-600 mb-6 leading-relaxed">
+                        No somos una cadena ni queremos serlo. Somos la cafetería de tu barrio, la de todos los días, donde conocemos tu nombre y sabemos cómo te gusta el café. Aquí no hay prisas, solo conversaciones, buenos productos y ese calor de barrio que tanto se echa de menos.
+                    </p>
+                    <p class="text-lg text-stone-600 leading-relaxed">
+                        Cada taza que servimos, cada tostada que preparamos, lleva detrás la misma filosofía: calidad, cercanía y autenticidad. Porque Bruno no es solo un sitio para tomar café, es tu rincón en el barrio.
+                    </p>
+                </div>
+                <div class="bg-amber-50 p-8 rounded-2xl">
+                    <h3 class="text-2xl font-bold mb-6 text-[#0F3D2E]">Lo que nos hace especiales</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="bg-[#0F3D2E] text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 flex-shrink-0 mt-1 text-sm">✓</div>
+                            <div>
+                                <h4 class="font-semibold text-stone-800 mb-1">Café de especialidad</h4>
+                                <p class="text-stone-600">Seleccionamos cada grano para ofrecerte la mejor experiencia en cada taza</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-[#0F3D2E] text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 flex-shrink-0 mt-1 text-sm">✓</div>
+                            <div>
+                                <h4 class="font-semibold text-stone-800 mb-1">Bollería fresca diaria</h4>
+                                <p class="text-stone-600">Cada mañana, productos frescos y de calidad que huelen a hogar</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-[#0F3D2E] text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 flex-shrink-0 mt-1 text-sm">✓</div>
+                            <div>
+                                <h4 class="font-semibold text-stone-800 mb-1">Trato familiar</h4>
+                                <p class="text-stone-600">Aquí no eres un número, eres parte de la familia Bruno</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carta / Productos -->
+    <section id="carta" class="py-20 bg-stone-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 text-stone-800">Nuestra Carta</h2>
+                <p class="text-xl text-stone-600">Preparado con cariño, servido con una sonrisa</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Cafés -->
+                <div class="bg-white p-8 rounded-2xl hover-lift">
+                    <div class="text-center mb-6">
+                        <h3 class="text-2xl font-bold text-stone-800">Cafés</h3>
+                    </div>
+                    <ul class="space-y-3 text-stone-600">
+                        <li class="flex justify-between border-b border-stone-100 pb-2">
+                            <span>Café solo</span>
+                            <span class="font-semibold">1,20€</span>
+                        </li>
+                        <li class="flex justify-between border-b border-stone-100 pb-2">
+                            <span>Café con leche</span>
+                            <span class="font-semibold">1,50€</span>
+                        </li>
+                        <li class="flex justify-between border-b border-stone-100 pb-2">
+                            <span>Cortado</span>
+                            <span class="font-semibold">1,30€</span>
+                        </li>
+                        <li class="flex justify-between border-b border-stone-100 pb-2">
+                            <span>Cappuccino</span>
+                            <span class="font-semibold">2,00€</span>
+                        </li>
+                        <li class="flex justify-between border-b border-stone-100 pb-2">
+                            <span>Café bombón</span>
+                            <span class="font-semibold">1,80€</span>
+                        </li>
+                        <li class="flex justify-between pb-2">
+                            <span>Carajillo</span>
+                            <span class="font-semibold">2,20€</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Desayunos -->
+                <div class="bg-white p-8 rounded-2xl hover-lift">
+                    <div class="text-center mb-6">
+                        <h3 class="text-2xl font-bold text-stone-800">Desayunos</h3>
+                    </div>
+                    <ul class="space-y-3 text-stone-600">
+                        <li class="border-b border-stone-100 pb-3">
+                            <div class="flex justify-between mb-1">
+                                <span class="font-semibold">Tostada con tomate</span>
+                                <span class="font-semibold">2,50€</span>
+                            </div>
+                            <p class="text-sm text-stone-500">Pan artesano con aceite de oliva virgen</p>
+                        </li>
+                        <li class="border-b border-stone-100 pb-3">
+                            <div class="flex justify-between mb-1">
+                                <span class="font-semibold">Tostada mixta</span>
+                                <span class="font-semibold">3,80€</span>
+                            </div>
+                            <p class="text-sm text-stone-500">Jamón york y queso fundido</p>
+                        </li>
+                        <li class="border-b border-stone-100 pb-3">
+                            <div class="flex justify-between mb-1">
+                                <span class="font-semibold">Croissant</span>
+                                <span class="font-semibold">1,80€</span>
+                            </div>
+                            <p class="text-sm text-stone-500">Recién horneado cada mañana</p>
+                        </li>
+                        <li class="pb-3">
+                            <div class="flex justify-between mb-1">
+                                <span class="font-semibold">Pincho de tortilla</span>
+                                <span class="font-semibold">2,50€</span>
+                            </div>
+                            <p class="text-sm text-stone-500">Casera, jugosa y generosa</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Especiales -->
+                <div class="bg-white p-8 rounded-2xl hover-lift">
+                    <div class="text-center mb-6">
+                        <h3 class="text-2xl font-bold text-stone-800">Especialidades</h3>
+                    </div>
+                    <ul class="space-y-3 text-stone-600">
+                        <li class="border-b border-stone-100 pb-3">
+                            <div class="flex justify-between mb-1">
+                                <span class="font-semibold">Zumo natural</span>
+                                <span class="font-semibold">3,50€</span>
+                            </div>
+                            <p class="text-sm text-stone-500">Naranja o mixto, recién exprimido</p>
+                        </li>
+                        <li class="border-b border-stone-100 pb-3">
+                            <div class="flex justify-between mb-1">
+                                <span class="font-semibold">Batido natural</span>
+                                <span class="font-semibold">4,00€</span>
+                            </div>
+                            <p class="text-sm text-stone-500">Fresa, plátano o chocolate</p>
+                        </li>
+                        <li class="border-b border-stone-100 pb-3">
+                            <div class="flex justify-between mb-1">
+                                <span class="font-semibold">Bocadillo del día</span>
+                                <span class="font-semibold">4,50€</span>
+                            </div>
+                            <p class="text-sm text-stone-500">Pregunta por nuestra sugerencia</p>
+                        </li>
+                        <li class="pb-3">
+                            <div class="flex justify-between mb-1">
+                                <span class="font-semibold">Dulces caseros</span>
+                                <span class="font-semibold">Desde 2,00€</span>
+                            </div>
+                            <p class="text-sm text-stone-500">Bizcochos, magdalenas y más</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mt-12 text-center bg-amber-50 p-8 rounded-2xl">
+                <p class="text-lg text-stone-700">
+                    <span class="font-semibold">Combinados especiales:</span> Pregunta por nuestros desayunos completos. Café + tostada desde 3,00€
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería -->
+    <section id="galeria" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 text-stone-800">Nuestro espacio</h2>
+                <p class="text-xl text-stone-600">Un rincón acogedor en tu barrio</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="bg-gradient-to-br from-amber-200 to-amber-300 rounded-2xl h-64 flex items-center justify-center hover-lift">
+                    <div class="text-center text-amber-900">
+                        <p class="font-semibold text-xl">Café de calidad</p>
+                    </div>
+                </div>
+                <div class="bg-gradient-to-br from-stone-200 to-stone-300 rounded-2xl h-64 flex items-center justify-center hover-lift">
+                    <div class="text-center text-stone-800">
+                        <p class="font-semibold text-xl">Bollería artesanal</p>
+                    </div>
+                </div>
+                <div class="bg-gradient-to-br from-amber-100 to-amber-200 rounded-2xl h-64 flex items-center justify-center hover-lift">
+                    <div class="text-center text-amber-900">
+                        <p class="font-semibold text-xl">Ambiente familiar</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 bg-stone-50 p-8 rounded-2xl text-center">
+                <p class="text-stone-600 italic">Ven a conocernos y descubre por qué somos la cafetería favorita del barrio</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reseñas -->
+    <section class="py-20 bg-stone-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 text-stone-800">Lo que dicen de nosotros</h2>
+                <div class="flex justify-center items-center gap-2">
+                    <span class="text-3xl text-[#C9A24D]">★★★★★</span>
+                </div>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl hover-lift">
+                    <div class="flex mb-4">
+                        <span class="text-[#C9A24D]">★★★★★</span>
+                    </div>
+                    <p class="text-stone-700 mb-4 italic">"El mejor café del barrio, sin duda. El trato es súper cercano y se nota que le ponen cariño a todo. Mi sitio de siempre para el desayuno."</p>
+                    <p class="text-stone-900 font-semibold">- Cliente habitual</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl hover-lift">
+                    <div class="flex mb-4">
+                        <span class="text-amber-500">⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <p class="text-stone-700 mb-4 italic">"Me encanta venir aquí. Es como estar en casa pero con mejor café. La bollería está riquísima y siempre hay ambiente agradable."</p>
+                    <p class="text-stone-900 font-semibold">- Vecina de Orriols</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl hover-lift">
+                    <div class="flex mb-4">
+                        <span class="text-amber-500">⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <p class="text-stone-700 mb-4 italic">"Calidad-precio excelente y un trato familiar que ya no se encuentra en muchos sitios. Totalmente recomendable si vives por la zona."</p>
+                    <p class="text-stone-900 font-semibold">- Cliente del barrio</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 text-stone-800">Ven a conocernos</h2>
+                <p class="text-xl text-stone-600">Te esperamos con el café preparado</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-[#0F3D2E] text-white rounded-full w-12 h-12 flex items-center justify-center mr-4 flex-shrink-0 text-xl">📍</div>
+                            <div>
+                                <h3 class="font-semibold text-lg text-stone-800 mb-1">Dirección</h3>
+                                <p class="text-stone-600">Carrer de Santiago Rusiñol, 36</p>
+                                <p class="text-stone-600">46019 Valencia (Orriols, Rascanya)</p>
+                                <a href="https://maps.google.com/?q=Carrer+de+Santiago+Rusiñol+36+Valencia" target="_blank" class="text-[#0F3D2E] hover:text-[#C9A24D] font-medium mt-2 inline-block">
+                                    Ver en Google Maps →
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-[#0F3D2E] text-white rounded-full w-12 h-12 flex items-center justify-center mr-4 flex-shrink-0 text-xl">📞</div>
+                            <div>
+                                <h3 class="font-semibold text-lg text-stone-800 mb-1">Teléfono</h3>
+                                <a href="tel:+34633552298" class="text-stone-600 hover:text-[#C9A24D] text-lg">
+                                    633 55 22 98
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-[#0F3D2E] text-white rounded-full w-12 h-12 flex items-center justify-center mr-4 flex-shrink-0">🕒</div>
+                            <div>
+                                <h3 class="font-semibold text-lg text-stone-800 mb-2">Horario</h3>
+                                <div class="space-y-1 text-stone-600">
+                                    <p><span class="font-medium">Lunes a Viernes:</span> 7:00 - 21:00</p>
+                                    <p><span class="font-medium">Sábados:</span> 8:00 - 15:00</p>
+                                    <p><span class="font-medium">Domingos:</span> 8:00 - 14:00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-[#0F3D2E] text-white rounded-full w-12 h-12 flex items-center justify-center mr-4 flex-shrink-0">📱</div>
+                            <div>
+                                <h3 class="font-semibold text-lg text-stone-800 mb-2">Síguenos</h3>
+                                <a href="https://www.instagram.com/brunocafeteriavlc/" target="_blank" class="text-[#0F3D2E] hover:text-[#C9A24D] font-medium">
+                                    @brunocafeteriavlc en Instagram
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 p-6 bg-amber-50 rounded-2xl">
+                        <h3 class="font-bold text-lg text-[#0F3D2E] mb-3">🚶 Cómo llegar</h3>
+                        <p class="text-stone-700 mb-2">Estamos en el corazón de Orriols, muy cerca de:</p>
+                        <ul class="text-stone-600 space-y-1 text-sm">
+                            <li>• Avenida de la Constitución</li>
+                            <li>• Avenida Primado Reig</li>
+                            <li>• Centro de Salud Arquitecto Tolsá</li>
+                            <li>• Parada de Valenbisi en la zona</li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div class="bg-stone-100 rounded-2xl h-full min-h-[500px] flex items-center justify-center p-8">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3079.3887951234567!2d-0.3789!3d39.4899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMznCsDI5JzIzLjYiTiAwwrAyMic0NC4wIlc!5e0!3m2!1ses!2ses!4v1234567890"
+                            width="100%" 
+                            height="100%" 
+                            style="border:0; border-radius: 1rem;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-stone-800 text-white py-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4 text-[#C9A24D]">Bruno</h3>
+                    <p class="text-stone-300">La cafetería del barrio en Orriols, Valencia. Tu café de siempre, como debe ser.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4 text-[#C9A24D]">Contacto</h4>
+                    <ul class="space-y-2 text-stone-300">
+                        <li>C/ Santiago Rusiñol, 36</li>
+                        <li>46019 Valencia</li>
+                        <li><a href="tel:+34633552298" class="hover:text-[#C9A24D]">633 55 22 98</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4 text-[#C9A24D]">Síguenos</h4>
+                    <a href="https://www.instagram.com/brunocafeteriavlc/" target="_blank" class="text-stone-300 hover:text-[#C9A24D] transition">
+                        Instagram @brunocafeteriavlc
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-stone-700 pt-8 text-center text-stone-400 text-sm">
+                <p>&copy; 2026 Bruno - Cafetería. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
